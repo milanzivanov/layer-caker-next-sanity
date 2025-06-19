@@ -45,6 +45,12 @@ export const postType = defineType({
         })
       ]
     }),
+    // Add related posts for drag and drop
+    defineField({
+      name: "relatedPosts",
+      type: "array",
+      of: [{ type: "reference", to: { type: "post" } }]
+    }),
     defineField({
       name: "categories",
       type: "array",
