@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export function Header() {
   return (
-    <div className="from-pink-50 to-white bg-gradient-to-b p-6">
-      <header className="bg-white/80 shadow-md flex items-center justify-between p-6 rounded-lg container mx-auto shadow-pink-50">
+    <div className="relative z-50 p-6">
+      <header className="bg-white/80 shadow-md flex items-center justify-between p-6 rounded-lg container mx-auto">
         <Link
           className="text-pink-700 md:text-xl font-bold tracking-tight"
           href="/"
