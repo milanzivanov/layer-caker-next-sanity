@@ -15,8 +15,6 @@
     "@sanity/icons": "^3.7.0",
     "@sanity/image-url": "^1.1.0",
     "@sanity/presentation": "^2.0.0",
-    "@sanity/structure": "^2.36.2",
-    "@sanity/ui": "^2.16.2",
     "@sanity/vision": "^3.93.0",
     "dayjs": "^1.11.13",
     "next": "15.3.2",
