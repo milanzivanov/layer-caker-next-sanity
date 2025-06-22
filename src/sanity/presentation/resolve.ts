@@ -20,6 +20,20 @@ export const resolve: PresentationPluginOptions["resolve"] = {
           { title: "Posts index", href: `/posts` }
         ]
       })
+    }),
+    page: defineLocations({
+      select: {
+        title: "title",
+        slug: "slug.current"
+      },
+      resolve: (doc) => ({
+        locations: [
+          {
+            title: doc?.title || "Untitled",
+            href: `/${doc?.slug}`
+          }
+        ]
+      })
     })
   }
 };

@@ -1,9 +1,5 @@
 "use client";
 
-/**
- * This configuration is used to for the Sanity Studio that’s mounted on the `\src\app\studio\[[...tool]]\page.tsx` route
- */
-
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
@@ -38,5 +34,9 @@ export default defineConfig({
         }
       }
     })
-  ]
+  ],
+  document: {
+    newDocumentOptions: (prev) =>
+      prev.filter((item) => item.templateId !== "siteSettings")
+  }
 });
